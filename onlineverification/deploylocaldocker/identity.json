@@ -1,8 +1,8 @@
 {
-  "id": "http://192.168.178.96:7000/identity",
+  "id": "http://tvvalidation.mywire.org/identity",
   "verificationMethod": [
     {
-      "id": "http://192.168.178.96:7000/identity/verificationMethod/JsonWebKey2020#ValidationServiceEncKey-1",
+      "id": "http://tvvalidation.mywire.org/identity/verificationMethod/JsonWebKey2020#ValidationServiceEncKey-1",
       "type": "JsonWebKey2020",
       "controller": "https://thisservice.com/identity",
       "publicKeyJwk": {
@@ -15,7 +15,7 @@
       }
     },
     {
-      "id": "http://192.168.178.96:7000/identity/verificationMethod/JsonWebKey2020#ValidationServiceSignKey-1",
+      "id": "http://tvvalidation.mywire.org/identity/verificationMethod/JsonWebKey2020#ValidationServiceSignKey-1",
       "type": "JsonWebKey2020",
       "controller": "https://thisservice.com/identity",
       "publicKeyJwk": {
@@ -30,15 +30,15 @@
   ],
   "service": [
     {
-      "id": "http://192.168.178.96:7000/identity/service/ValidationService#InitializeService",
+      "id": "http://tvvalidation.mywire.org/identity/service/ValidationService#InitializeService",
       "type": "InitializeService",
-      "serviceEndpoint": "http://192.168.178.96:7000/initialize",
+      "serviceEndpoint": "http://tvvalidation.mywire.org/initialize",
       "name": "Demo Validation Service Initialise"
     },
     {
-      "id": "http://192.168.178.96:7000/identity/service/ValidationService#ValidationService",
+      "id": "http://tvvalidation.mywire.org/identity/service/ValidationService#ValidationService",
       "type": "ValidationService",
-      "serviceEndpoint": "http://192.168.178.96:7000/validate",
+      "serviceEndpoint": "http://tvvalidation.mywire.org/validate",
       "name": "Demo Validation Service Validate"
     }
   ]
